@@ -1,61 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="#">
-		<div class="input-feild">
-			<label>Name: </label>
-			<input type="text">
-		</div>
+	<form  method="post">
+		<label for="name">Name</label>
+		<input id="name" type="text" placeholder="Enter Name" name="name" required>
+ 
+		<label for="email">Email</label>
+		<input id="email" type="email" placeholder="Enter Email" name="email" required>
 
-		<div class="input-feild">
-			<label>Email: </label>
-			<input type="text">
-		</div>
+		<label for="gender">Gender :</label>
+		
+		<input type="radio" name="gender" value="Male"> Male
+		<input type="radio" name="gender" value="Female"> Female
+		<input type="radio" name="gender" value="Others"> Others
+ 
+		<label for="cars">Car Brands :</label>
+		<select name="cars" id="cars">
+			<option name="cars" value="Apple">BMW</option>
+			<option name="cars" value="Asus">Audi</option>
+			<option name="cars" value="HP">Mercedes</option>
+		</select>
 
-		<div class="input-feild">
-			<label>Gender: </label>
-			<input type="radio" name="gender" value="male" checked>Male
-			<input type="radio" name="gender" value="female">Female
-		</div>
+		<label for="age">Age :</label>
+		<input
+		   id="age"
+		   type="number"
+		   required 
+		   placeholder="Enter your age here"
+		   name="age"
+		>
 
-		<div class="input-feild">
-			<label>Car Brands: </label>
-			<select>
-				<option value="BMW">BMW</option>
-				<option value="Audi">Audi</option>
-				<option value="Mercedez">Mercedez</option>
-			</select>
-		</div>
+		<label for="dob">D.O.B. :</label>
+		<input required name="dob" id="dob" type="date">
 
-		<div class="input-feild">
-			<label>Age: </label>
-			<input type="number">
-		</div>
+		<label for="password">Password :</label>
+		<input required name="password" id="password" type="password">
 
-		<div class="input-feild">
-			<label>DOB: </label>
-			<input type="date" placeholder="Enter birth date" required>
-		</div>
-
-		<div class="input-feild">
-			<label>Password: </label>
-			<input type="password" name="pwdUser" id="pwdUser" value="">
-		</div>
-
-		<button class="submitBtn">
-			<span class="btnText">submit</span>
-		</button>
+		<button type="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
-</script>
-
+</script> 
 </body>
-
 </html>
